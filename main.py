@@ -26,7 +26,7 @@ def main():
         screen.fill("#151515")
 
         player.draw(screen)
-
+        player.update(dt)
         # Next frame (ie. next flipbook page)
         pygame.display.flip()
         time_passed = clock_object.tick(60)
